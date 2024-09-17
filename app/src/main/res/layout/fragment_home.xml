@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Title"
+            android:layout_margin="@dimen/dimen8"
+            android:layout_marginTop="@dimen/dimen25"
+            android:text="@string/app_name"
+            android:textColor="@color/pastel_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/charactersRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen8"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/tvNextPage"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            tools:listitem="@layout/list_item_character" />
+
+        <TextView
+            android:id="@+id/tvNextPage"
+            style="@style/SubTitle"
+            android:layout_marginVertical="@dimen/dimen8"
+            android:layout_marginEnd="@dimen/dimen16"
+            android:text="@string/next"
+            android:textAlignment="center"
+            android:textColor="@color/pastel_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/charactersRecycler" />
+
+        <TextView
+            android:id="@+id/tvPreviousPage"
+            style="@style/SubTitle"
+            android:layout_marginStart="@dimen/dimen16"
+            android:text="@string/previous"
+            android:textAlignment="center"
+            android:textColor="@color/pastel_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/charactersRecycler" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

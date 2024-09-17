@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_logo" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen16"
+                android:background="@color/dark_gray"
+                android:paddingBottom="@dimen/dimen16"
+                app:layout_constraintTop_toBottomOf="@+id/ivCharacter">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/Title"
+                    android:layout_marginStart="@dimen/dimen16"
+                    android:layout_marginTop="@dimen/dimen16"
+                    android:text="@string/dummy_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCreationInfo"
+                    style="@style/SubTitle"
+                    android:layout_marginTop="@dimen/dimen8"
+                    android:text="@string/character_creation_date"
+                    app:layout_constraintStart_toStartOf="@+id/tvName"
+                    app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    style="@style/Paragraph"
+                    android:layout_marginTop="@dimen/dimen16"
+                    android:text="@string/character_type_description"
+                    app:layout_constraintStart_toStartOf="@+id/tvCreationInfo"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCreationInfo" />
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    style="@style/Paragraph"
+                    android:text="@string/character_gender_description"
+                    app:layout_constraintStart_toStartOf="@+id/tvStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStatus" />
+
+                <TextView
+                    android:id="@+id/tvEpisodeTitle"
+                    style="@style/SubTitle"
+                    android:layout_marginTop="@dimen/dimen16"
+                    android:text="@string/character_episodes_list"
+                    app:layout_constraintStart_toStartOf="@+id/tvGender"
+                    app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+                <TextView
+                    android:id="@+id/tvEpisodeList"
+                    style="@style/Paragraph"
+                    android:layout_marginTop="@dimen/dimen16"
+                    android:text="@string/character_episodes_list"
+                    app:layout_constraintStart_toStartOf="@+id/tvEpisodeTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEpisodeTitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
