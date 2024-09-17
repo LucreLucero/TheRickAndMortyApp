@@ -1,4 +1,4 @@
-# Challenge Mobile Rick and Morty | App Android | Lucero Lucrecia
+# Rick and Morty | Lucero Lucrecia
 
 Esta documentación proporciona información sobre las decisiones de diseño y las bibliotecas externas utilizadas en la app 
 
@@ -35,3 +35,10 @@ Las siguientes bibliotecas externas se utilizaron en la aplicación:
 
 - **Glide**: Se utiliza Glide como librería de imágenes para consumir aquellas que vienen del servicio junto con los demás datos.
   - [Documentación de Glide](https://github.com/bumptech/glide)
+
+## SS de la app:
+<img width="217" alt="Screenshot 2024-09-15 204705" src="https://github.com/user-attachments/assets/f1a9c172-69f5-442b-a86a-eaf8cb8e422a">
+
+<img width="216" alt="Screenshot 2024-09-15 204726" src="https://github.com/user-attachments/assets/f8080361-c4a2-46c8-98e7-dfedac974ace">
+<img width="217" alt="Screenshot 2024-09-15 205239" src="https://github.com/user-attachments/assets/539d766a-e9cb-4370-b879-8e1f0a1eb084">
+<img width="217" alt="Screenshot 2024-09-15 205307" src="https://github.com/user-attachments/assets/c944ea42-2653-473f-9edd-864f112093e7">
