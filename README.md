@@ -18,7 +18,7 @@ Las siguientes bibliotecas externas se utilizaron en la aplicación:
 - **Retrofit**: Se utiliza Retrofit para realizar solicitudes HTTP a la API para obtener los datos de los personajes.
   - [Documentación de Retrofit](https://square.github.io/retrofit/)
 
-- **RecyclerView**: Se utiliza RecyclerView para mostrar las listas de noticias y usuarios.
+- **RecyclerView**: Se utiliza RecyclerView para mostrar las listas de personajes.
   - [Documentación de RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
 
 - **ViewModel**: Se crea un ViewModel para manejar la lógica de negocio y proporcionar los datos a la vista.
